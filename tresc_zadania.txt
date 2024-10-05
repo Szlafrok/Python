@@ -1,0 +1,12 @@
+int() # liczba całkowita
+float() # liczba dziesiętna / zmiennoprzecinkowa
+bool() # wartość logczina True/False
+str() # tekst
+
+# int -> str
+# float -> str
+# str -> bool
+# str -> int
+# str - > float
+# bool -> float
+# bool -> int
