@@ -48,13 +48,12 @@ a = (p != q) # wykorzystaj tylko operatory > oraz <
 b = (p > q) # wykorzystaj tylko operatory < oraz ==
 
 # C)
-c = (p == q) # wykorzystaj tylko operator ==
+c = (p == q) # wykorzystaj tylko operator != (tu był błąd w zadaniu)
 
 # D)
 d = (p >= q) # wykorzystaj tylko operator <
 
 # E)
 e = (p == q) # wykorzystaj tylko operatory >= oraz <=
-
 
 # ;)
