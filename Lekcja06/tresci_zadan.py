@@ -25,8 +25,4 @@ HASLO = "M4K4R3NA_" # (możecie podstawić dowolne hasło i pin)
 # z wymienionych przedmiotów i oceni, czy otrzyma on świadectwo z
 # paskiem oraz poda jego średnią 
 
-
-
-
-
 # Ciekawostka: zadania olimpijskie, algorytmiczne, itd. często zawierają wątki fabularne ;)
