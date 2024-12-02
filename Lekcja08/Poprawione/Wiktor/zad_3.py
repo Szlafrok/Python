@@ -28,6 +28,6 @@ def alternatywnie(): # Dopisuję inne podejście w ramach ciekawostki ;)
     for i in range(2, liczba):
         ciag[i] = ciag[i-1] + ciag[i-2]
 
-# Zadanie zrobione bardzo dobrze i elegancko B)
+# Zadanie zrobione bardzo dobrze i elegancko B) Gratki!!!
 
 # (4.0 / 4.0)

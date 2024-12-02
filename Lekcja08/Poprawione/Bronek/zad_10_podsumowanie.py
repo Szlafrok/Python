@@ -12,7 +12,7 @@ else:
 
 # ---------------- PODSUMOWANIE ----------------
 
-# Zadanie 1: 3.25 pkt
+# Zadanie 1: 3.75 pkt
 # Zadanie 2: 4 pkt - liczę do obowiązkowych
 # Zadanie 3: 4 pkt - liczę do obowiązkowych
 # Zadanie 4: 3.25 pkt
@@ -21,7 +21,7 @@ else:
 
 # Dodatkowe: -----------
 
-# Zadanie 7: Rozwiązane zadanie 1: +2p / 2.5
+# Zadanie 7: Rozwiązane zadanie 1: +2.5p / 2.5
 # Zadanie 8: Rozwiązane zadanie 4: +1.5p / 1.5
 # Zadanie 9: Bardzo ładne uzasadnienie :) +2 pkt
 # Zadanie 10: Bardzo dobrze :D +3 pkt

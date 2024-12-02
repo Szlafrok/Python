@@ -5,7 +5,7 @@ print(list(range(8))) # OK
 print(list(range(5, 13))) # OK
 
 # c) -5, -4, -3
-print(list(range(-5, -2))) # Brakuje Ci podania kroku! Trzeba dodać argument -1: range(-5, -2, -1)
+print(list(range(-5, -2))) # OK
 
 # d) 2, 4, 6, 8, 10
 print(list(range(2, 11, 2))) # OK
@@ -25,4 +25,4 @@ print([5]) # Jak wyżej - trzeba było użyć range: range(5, 6)
 # i) 1000, 999, 998, 997
 print(list(range(1000, 996, -1))) # Tu już ładnie zrobiony krok ;) Jest OK
 
-# (3.25 / 4.00) - liczę do dodatkowych!
+# (3.75 / 4.00) - liczę do dodatkowych!
