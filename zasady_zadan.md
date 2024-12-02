@@ -19,4 +19,4 @@
 > - 65%: 7 Odznak
 > - 70%: 8 Odznak
 > - 75%: 9 Odznak
-> ### - 80%: 10 Odznak
+> - **80%: 10 Odznak**
