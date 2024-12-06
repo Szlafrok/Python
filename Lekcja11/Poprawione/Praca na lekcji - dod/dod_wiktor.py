@@ -12,4 +12,3 @@ print(nwd(12, 15))  #  3
 print(nww(12, 15))  #  60
 
 # Bardzo zwięźle zrobiony kod, jednocześnie zrozumiały i czytelny.
-# Fajnie, że sugerujesz typy danych!
