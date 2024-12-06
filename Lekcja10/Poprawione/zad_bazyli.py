@@ -10,7 +10,7 @@ def join(lacznik, teksty):
     print(lacznik.join(teksty))
 join("|", ["Lubie", "jeść", "herbatę o smaku", "mango"])
 
-# !!!!!!!
+# Jest OK, metoda str.join, której tu użyłeś, nie koliduje z zadeklarowaną funkcją join(). Ładnie zrobione!
 # (3/3)
 
 
