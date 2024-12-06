@@ -47,7 +47,7 @@ def logowanie(popr_login, popr_haslo):
 # Przykładowo: Wywołanie cyfry(1235) zwraca 1 + 2 + 3 + 5 = 11
 
 
-# (*) ZADANIE 4 (+2 pkt)
+# ZADANIE 4 (2 pkt)
 # Proszę przesłać mi na emaila pseudonim, który od teraz ma się pokazywać zamiast Twojego imienia i nazwiska ;)
 
 
