@@ -3,6 +3,8 @@
 
     Termin wykonania: Niedziela 15 grudnia
 
+    Gwoli przypomnienia, bo myślę, że warto o tym napomknąć:
+
     NIE MUSICIE robić wszystkich zadań! Każde jedno zadanie, które wykonacie, liczy się!
     Zawsze to jest ten krok do przodu, który robicie, żeby być LEPSZYMI PROGRAMISTAMI!
 
