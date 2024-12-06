@@ -11,4 +11,4 @@ def nww(a: int, b: int) -> int: # (2/2)
 print(nwd(12, 15))  #  3
 print(nww(12, 15))  #  60
 
-# Bardzo zwięźle zrobiony kod, jednocześnie zrozumiały i czytelny.
+# Bardzo zwięźle zrobiony kod, jednocześnie zrozumiały i czytelny. Brawo!
