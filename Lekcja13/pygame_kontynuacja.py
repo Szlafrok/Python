@@ -28,6 +28,11 @@ def print_image(img_list):
     screen_surface.blit(surface, rect)
     return
 
+def set_position_image(img_list, position):
+    image, surface, rect = img_list
+    rect = surface.get_rect(center = position)
+    return [image, surface, rect]
+
 #################################################################
 
 player_pos = [0, 0]#[SZEROKOSC // 2, WYSOKOSC // 2]
