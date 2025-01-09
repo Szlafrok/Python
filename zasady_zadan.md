@@ -5,8 +5,8 @@
 - Każdy z Was zdobywa punkty, rozwiązując i odsyłając mi zadania. Punkty zdobywacie za:
  - Rozwiązywanie zadań dla wszystkich: *zależnie od punktów za zadanie, max 5*
  - Rozwiązywanie zadań dodatkowych: *zależnie od punktów za zadanie, max 3*
- - Wysokie miejsca w Kahootach: *+1 za miejsce medalowe, dodatkowo +1 za zwycięstwo*
- - Bardzo dobre wyniki w quizach u Gigantów: *+1 za wynik >= 80%, dodatkowo +1 za bezbłędne rozwiązanie*
+ - Wysokie miejsca w Kahootach: *+1 za miejsce medalowe, dodatkowo +1 za zwycięstwo* (progi mogą być niższe)
+ - Bardzo dobre wyniki w quizach u Gigantów: *+1 za wynik >= 80%, dodatkowo +1 za bezbłędne rozwiązanie* (progi mogą być niższe)
  - [!] Uwaga: punkty zdobyte za zd. dodatkowe, Kahooty i quizy **nie liczą się do maksimum i są dodatkowe!** Dzięki nim możecie uzyskać wynik za zadania powyżej 100%.
 
 - Na koniec kursu przyznajemy odznaki za zadania, według tych progów:
