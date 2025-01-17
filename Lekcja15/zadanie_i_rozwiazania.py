@@ -11,7 +11,12 @@
 # Szablon: 
 
 def not_prime(n: int) -> bool:
-    pass
+    if n < 2:
+        return False # NIEPIERWSZA, NIEZŁOŻONA
+    for i in range(2, int(n**(0.5)) + 1):
+        if n % i == 0:
+            return True
+    return False # PIERWSZA, W KONSEKWENCJI NIEZŁOŻONA
 
 # Proszę zaimplementować funkcję not_prime(n), która przyjmuje jako argument liczbę naturalną n i
 # zwraca True, jeżeli liczba jest złożona, lub False, jeżeli liczba jest pierwsza. Przykładowo, dla wywołania:
@@ -30,12 +35,17 @@ print(f"Zadanie domowe 1: Wynik = {wynik}")
 
 # Szablon:
 def trojeczka(n: int) -> str:
-    pass
+    trojkowy = "" # Zmienna z wynikiem
+    while n > 0:
+        reszta = n % 3
+        trojkowy += str(reszta)
+        n = n // 3
+    return trojkowy[::-1] # odwrócony ze względu na algorytm wyznaczania liczby
 
 # Proszę zaimplementować funkcję trojeczka(n), która przyjmuje jako argument liczbę naturalną n zapisaną w
 # systemie dziesiętnym i zwraca tę liczbę w systemie trójkowym. Przykładowo, dla wywołania:
 
-wynik = trojeczka(15)
+wynik = trojeczka(17)
 print(f"Zadanie domowe 2: Wynik = {wynik}")
 
 # Otrzymanym wynikiem będzie "122" (bo 2*1 + 2*3 + 1*9 = 2 + 6 + 9 = 17)
