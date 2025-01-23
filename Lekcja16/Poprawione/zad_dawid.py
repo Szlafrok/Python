@@ -53,6 +53,7 @@ saldo = 0
 wybor = 0
 
 while wybor != 4:
+    if not pobierz_pin(): exit()
     glowne_menu()
     wybor = wczytaj_wybor_uzytkownika()
 
@@ -69,3 +70,4 @@ while wybor != 4:
 exit() # Koniec projektu
 
 # Zadanie 1: (3/3)
+# Zadanie 2: (3/4)

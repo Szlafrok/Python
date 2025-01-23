@@ -1,3 +1,13 @@
+### 23.01.2025
+- Dodaję plik wyniki_ogolne.pdf, który zawiera info na temat aktualnego statusu odznak z aktywności, odznak za zadania (mogą wzrastać lub się zmieniać) i minusów z aktywności.
+- Dodajemy na zajęciach system minusów za nieuważanie. Działa on w ten sposób:
+> - Każde przyłapanie na nieuważaniu daje minusa
+> - **Pierwszy** minus nie ma natychmiastowych konsekwencji
+> - **Drugi** minus zabiera 2 plusy z odznaki: To znaczy, że jeżeli na odznakę potrzeba 5 plusów, a Ty masz 2 minusy, to potrzebujesz 7 plusów.
+> - **Trzeci** minus skutkuje uwagą do biura i do rodziców. Otrzymanie takiej uwagi zeruje plusy na danych zajęciach. Minusy wówczas zerują się i liczą się od nowa.
+> - Minusy przenoszą się między kolejnymi zajęciami, ale leczą się co tydzień o 1. To znaczy, że jeżeli kończysz lekcję z 2 minusami, to na starcie następnej masz 1 minusa.
+
+
 ### 17.01.2025
 
 - Wstawiam wyniki zadań z lekcji 15 i zadania domowe z lekcji 15. Życzę owocnej pracy :D

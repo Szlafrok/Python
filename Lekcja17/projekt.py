@@ -24,10 +24,18 @@ def przetlumacz_slowo(slowo: str) -> str:
 
 
 def wynik_operacji(l1: int, l2: int, oper: str) -> float:
-    if oper == "+":
+    if oper == "+":  # ZADANIE: Proszę uzupełnić działania dla odejmowania, dzielenia i mnozenia
         return l1 + l2
+    elif oper == "*":
+        return l1 * l2
+    elif oper == "/":
+        return l1 / l2
+    elif oper == "-":
+        return l1 - l2
 
 # zadanie do wykonania po tym zadaniu: za pomocą AI uzupełnić bazy wyrazów do liczby 20
+# zadanie dodatkowe nr 2: proszę sprawić, że program po wyznaczeniu wyniku będzie się zapętlał
+
 
 def oblicz_z_tekstu(dzial: str) -> float:
     wynik = 0
@@ -51,6 +59,7 @@ for slowo in tekst.split(" "):
     dzialanie += przetlumacz_slowo(slowo)
 
 print(dzialanie)
+print(oblicz_z_tekstu(dzialanie))
 
 
 

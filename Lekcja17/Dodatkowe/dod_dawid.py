@@ -1,3 +1,4 @@
+#import math
 zero = ["0", "zero", "zera", "zerem", "nic"]
 jeden = ["1", "jeden", "jedynka", "jedynkę", "jedynki", "jednego"]
 dwa = ["2", "dwa", "dwójka", "dwójkę", "dwójki", "dwóch"]
@@ -19,25 +20,25 @@ siedemnascie = ["17", "siedemnaście", "siedemnastka", "siedemnastkę", "siedemn
 osiemnascie = ["18", "osiemnaście", "osiemnastka", "osiemnastkę", "osiemnastki", "osiemnastu"]
 dziewietnascie = ["19", "dziewiętnaście", "dziewiętnastka", "dziewiętnastkę", "dziewiętnastki", "dziewiętnastu"]
 dwadziescia = ["20", "dwadzieścia", "dwudziestka", "dwudziestkę", "dwudziestki", "dwudziestu"]
-
+#----------------------------------------------------------------------------------
 dodawanie = ["+", "dodawanie", "dodać", "plus", "sumowanie", "więcej", "dodaj"]
-odejmowanie = ["-", "odejmowanie", "odjąć", "minus", "różnica", "mniej", "odejmij"]
+odejmowanie = ["-", "odejmowanie", "odjąć", "minus", "różnica"]
 mnozenie = ["*", "mnożenie", "pomnożyć", "razy", "iloczyn", "przemnóż"]
-dzielenie = ["/", "dzielenie", "podzielić", "iloraz", "podziel"]
+dzielenie = ["/", "dzielenie", "podzielić", "iloraz", "podziel", "dzielone"]
 
-baza = [zero, jeden, dwa, trzy, cztery, piec, szesc, siedem, osiem, 
-        dziewiec, dziesiec, jedenascie, dwanascie, trzynascie, czternascie, 
-        pietnascie, szesnascie, siedemnascie, osiemnascie, dziewietnascie, 
-        dwadziescia, dodawanie, odejmowanie, mnozenie, dzielenie]
+baza = [zero, jeden, dwa, trzy, cztery, piec, szesc, siedem, osiem, dziewiec, dziesiec, jedenascie, dwanascie, trzynascie, czternascie, pietnascie, szesnascie, siedemnascie, osiemnascie, dziewietnascie, dwadziescia, dodawanie, odejmowanie, mnozenie, dzielenie]
 
-def przetlumacz_slowo(slowo: str) -> str:
+#------------------------------------------------------------
+
+def przetlumacz_slowo(slowo: str) -> str :
     for baza_symbolu in baza:
-        for symbol in baza_symbolu:
-            if slowo == symbol:
+        for elem in baza_symbolu:
+            if slowo == elem:
                 return baza_symbolu[0]
     return ""
 
-def oblicz_wynik(l1: int, l2: int, oper: str) -> float:
+
+def wynik_operacji(l1: int, l2: int, oper: str) -> float:
     if oper == "+":
         return l1 + l2
     elif oper == "-":
@@ -45,31 +46,42 @@ def oblicz_wynik(l1: int, l2: int, oper: str) -> float:
     elif oper == "*":
         return l1 * l2
     elif oper == "/":
-        return l1 / l2
-    return 0
+        if l2 != 0:
+            return l1 / l2
+        else:
+            print("Nie można dzielić przez 0")
+        return    
 
-def oblicz_z_tekstu(tekst: str) -> float:
+
+def oblicz_z_tekstu(dzial: str) -> float:
     wynik = 0
     liczba = ""
     operacja = ""
-    for znak in tekst:
+
+    for znak in dzial:
         if znak.isdigit():
             liczba += znak
         else:
             operacja = znak
-            wynik = int(liczba)
+            wynik = int(liczba)    
             liczba = ""
 
     if operacja == "": return int(liczba)
-    return oblicz_wynik(wynik, int(liczba), operacja)
+    return wynik_operacji(wynik, int (liczba), operacja)
 
+        
+dzialenie = "" # przechowywanie dzielenia
+tekst = input("proszę wprowadzić dzialenie: ")
 
-dzialanie = ""
-tekst = input("Podaj treść działania: ")
-
-for slowo in tekst.split(' '):
+for slowo in tekst.split(" "):
     #print(slowo)
-    dzialanie += przetlumacz_slowo(slowo)
+    dzialenie += przetlumacz_slowo(slowo)
 
-print(dzialanie)
-print(oblicz_z_tekstu(dzialanie))
+
+
+print(dzialenie)
+print(oblicz_z_tekstu(dzialenie))
+
+# Zaliczone :)
+
+# +2 pkt
