@@ -39,6 +39,21 @@ def czy_przerzucamy() -> bool:
 def wybierz_przerzuty() -> str:
     return input("Podaj kości do przerzucenia. Wymień ich numery bez spacji: ")
 
+
+def wybierz_rubryke() -> int:
+    return int(input("Podaj rubrykę, w którą chcesz wpisać punkty: "))
+
+
+def wyznacz_wynik(rub: int) -> int:
+    res = 0
+    for k in kosci:
+        if k == rub:
+            res += k
+    return res
+
+
+
+
 kosci = [0] * 5 # [0, 0, 0, 0, 0]
 
 numery_punktow = ["Jedynki", "Dwójki", "Trójki", "Czwórki", "Piątki", "Szóstki"]
@@ -60,4 +75,14 @@ for tura in range(6):
             przerzuty = 0
 
     pokaz_rubryki()
+    rubryka = wybierz_rubryke()
     
+    while punkty[rubryka - 1] != "[Wolne]":
+        print("W tej rubryce już masz punkty!")
+        rubryka = wybierz_rubryke()
+
+    bonus = wyznacz_wynik(rubryka)
+
+    punkty[rubryka - 1] = bonus
+
+print(f"Twój wynik to: {sum(punkty)}")
