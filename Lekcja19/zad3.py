@@ -16,8 +16,6 @@ def max_val(L: list) -> float:
     pass
 
 
-
-
 """
     Zadanie z gwiazdką:
     ★ (+1 pkt) Niech funkcje zwracają odpowiedznio trzy najmniejsze oraz trzy największe liczby z listy L.

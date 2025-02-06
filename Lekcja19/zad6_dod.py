@@ -8,8 +8,3 @@
     rosnącej.
 
 """
-
-def bloczek():
-    print("Witaj, świecie!")
-
-bloczek()

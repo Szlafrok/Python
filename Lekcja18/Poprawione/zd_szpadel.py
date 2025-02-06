@@ -91,4 +91,4 @@ print(f"Twój wynik to: {sum(punkty)}")
 
 
 
-# (3/4)
+# (4/4)

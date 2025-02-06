@@ -11,4 +11,4 @@
 
 # Szablon:
 def fizzbuzz() -> None:
-    pass # Miejsce na Twój kod...
+    pass

@@ -14,9 +14,7 @@ LITERY = "abcdefghijklmnopqrstuvwxyz"
 
 def przelicz(ciag: str) -> list:
     res = [0] * len(LITERY)
-
-    pass # Miejsce na Twój kod...
-
+    # ...
     return res
 
 
