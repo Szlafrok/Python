@@ -19,7 +19,7 @@ osoba_3 = {
 osoba_4 = {
     "imie" : "Władysław",
     "nazwisko" : "Chrobry",
-    "wiek" : 8
+    "wiek" :8 
 }
 
 print(osoba_1["imie"])
@@ -57,3 +57,14 @@ if osoba_4["wiek"] >= 18:
     print("Jesteś pełnoletni\n")
 else:
     print("Nie jesteś pełnoletni\n")
+
+def polacz(ciag: list) -> str:
+    res = ""
+    for elem in ciag:
+        res += str(elem) + " "
+    return res[:-1]
+
+
+druk = list(osoba_4.values())
+
+print(polacz(druk))

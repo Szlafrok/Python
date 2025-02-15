@@ -15,10 +15,21 @@ nazwisko_4 = "Jankowski"
 wiek_4 = 14
 
 if wiek_1 >= 18:
-    print("Przeszedłeś test na wiek")
+    print(f"{imie_1} {nazwisko_1} zdał test na wiek")
+else:
+    print(f"{imie_1} {nazwisko_1} nie zdał testu na wiek")
+
 if wiek_2 >= 18:
-    print("Przeszedłeś test na wiek")
+    print(f"{imie_2} {nazwisko_2} zdał test na wiek")
+else: 
+    print(f"{imie_2} {nazwisko_2} nie zdał testu na wiek.")
+
 if wiek_3 >= 18:
-    print("Przeszedłeś test na wiek")
+    print(f"{imie_3} {nazwisko_3} zdał test na wiek")
+else:
+    print(f"{imie_3} {nazwisko_3} nie zdał testu na wiek")
+
 if wiek_4 >= 18:
-    print("Nie przeszedłeś test na wiek")
+    print(f"{imie_4} {nazwisko_4} zdał test na wiek")
+else:
+    print(f"{imie_4} {nazwisko_4} nie zdał testu na wiek")
