@@ -16,6 +16,30 @@
 
 # Proszę potem utworzyć obiekty z przykładowymi danymi, dla których wywołamy utworzone metody.
 
+PI = 3.14
+
+class Kolo():
+    def __init__(self, r):
+        self.r = r
+        self.obwod = 2 * PI * self.r
+        self.pole = PI * self.r ** 2
+
+    def obw_wypisz(self):
+        print(self.obwod)
+    
+    def pole_wypisz(self):
+        print(self.pole)
+
+kolko = Kolo(10)
+
+kolko.obw_wypisz()
+kolko.pole_wypisz()
+
+
+    
+
+
+
 
 """
 
