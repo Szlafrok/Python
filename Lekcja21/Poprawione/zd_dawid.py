@@ -46,6 +46,9 @@ if __name__ == "__main__":
     print(student2.zdane())
 
 
-# Jestem pod wielkim wrażeniem :O
+# X
 
-# 5/5 +2p bonusu
+L = [True for i in range(10)]
+L[1] = False
+print(L)
+print(all(L))
