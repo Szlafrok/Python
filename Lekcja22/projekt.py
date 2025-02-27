@@ -34,6 +34,12 @@ z klasy Zwierze i dodatkowo będzie mieć:
 - metodę papuguj(), która opowie jakiś żart."""
 
 
+"""
+Proszę następnie napisać klasę Kakadu, która dziedziczy
+z klasy Papuga i ponadto ma metodę orzeszki(), która mówi nam,
+że Kakadu je orzeszki :)
+"""
+
 
 
 piesek = Zwierze("Szaman", 4)
