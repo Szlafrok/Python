@@ -24,4 +24,6 @@ class Prostokat():
     def obw_wypisz(self):
         print(self.obwod)
     
-    def
+    #def
+
+# Nie zdążyłeś niestety nic napisać - brak punktów :/ 
