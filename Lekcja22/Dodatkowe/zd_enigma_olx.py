@@ -80,6 +80,7 @@ def logowanie(proby = 3):
         if login == LOG and haslo == HASLO:
             olx = Chinski_0iX()
             olx.opcje()
+            break # dopisałem
         else:
             proby -= 1
             print(f"Złe dane pozsoatały {proby} proby")
@@ -90,6 +91,7 @@ def logowanie(proby = 3):
 
 
 logowanie()
+# Między innymi:
 
 # - bdb użycie stałych przy logowaniu
 # - bdb użycie argumentów domyślnych i samo zastosowanie funkcji
@@ -98,15 +100,17 @@ logowanie()
 # - książkowe użycie tzw. wzkaźników (tworzysz obiekt i dodajesz odnośnik do listy, linijki 30-31)
 #       - czegoś takiego nie powstydziliby się informatycy na pierwszym semestrze studiów!
 # - bdb sprawdzenie, czy lista jest pusta w 41 linijce
+# - bdb iteracja po kolejnych ogłoszeniach
 # - bezbłędne operowanie na klasach
 # - przewidywanie ew. błędów użytkownika
+# - jeden, jedyny błąd: po zamknięciu programu dalej pytasz o login i nie resetujesz liczby prób - linijka 83
 
 """
 Wszystko to, z czego skorzystałeś, pojawiło się na zajęciach, choć niektóre elementy
 wykorzystywaliśmy w mniej lub bardziej pobocznej formie - chociażby lista ogłoszeń pojawiła
 się w Inteligentnym Kalkulatorze jako baza liczb. Daj mi znać proszę, czy rzeźbiłeś projekt
 samodzielnie, czy korzystałeś z pomocy sztucznej inteligencji, dobrze? Praca jest bardzo
-złożona i bezbłędna, intuicja podpowiada mi Twój duży wkład, ale jestem ciekaw, czy korzystałeś
+złożona i niemal bezbłędna, intuicja podpowiada mi Twój duży wkład, ale jestem ciekaw, czy korzystałeś
 z pomocy AI i jeśli tak, w jaki sposób pomogło Ci utworzyć ten projekt :)
 
 Za tydzień nie będę mógł za bardzo zostać po zajęciach, ale bardzo chętnie porozmawiam o
