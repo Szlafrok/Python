@@ -20,7 +20,7 @@ class Chinski_0iX():
     def dod_ogl(self):
         while True:
             nazwa = input("\nPodaj nazwe ")
-            opis = input("Opisz pordukt ")
+            opis = input("Opisz pordukt ") # literówka
             cena = float(input("Podaj cene "))
             kat = input("podaj kategorie ")
             
@@ -90,3 +90,37 @@ def logowanie(proby = 3):
 
 
 logowanie()
+
+# - bdb użycie stałych przy logowaniu
+# - bdb użycie argumentów domyślnych i samo zastosowanie funkcji
+# - zamiast break w 88 linijce mógłbyś użyć else w 89tej, efekt ten sam, ale wygląda bardziej elegancko XD
+# - super, że w konstruktorze tworzysz pustą listę ;)
+# - książkowe użycie tzw. wzkaźników (tworzysz obiekt i dodajesz odnośnik do listy, linijki 30-31)
+#       - czegoś takiego nie powstydziliby się informatycy na pierwszym semestrze studiów!
+# - bdb sprawdzenie, czy lista jest pusta w 41 linijce
+# - bezbłędne operowanie na klasach
+# - przewidywanie ew. błędów użytkownika
+
+"""
+Wszystko to, z czego skorzystałeś, pojawiło się na zajęciach, choć niektóre elementy
+wykorzystywaliśmy w mniej lub bardziej pobocznej formie - chociażby lista ogłoszeń pojawiła
+się w Inteligentnym Kalkulatorze jako baza liczb. Daj mi znać proszę, czy rzeźbiłeś projekt
+samodzielnie, czy korzystałeś z pomocy sztucznej inteligencji, dobrze? Praca jest bardzo
+złożona i bezbłędna, intuicja podpowiada mi Twój duży wkład, ale jestem ciekaw, czy korzystałeś
+z pomocy AI i jeśli tak, w jaki sposób pomogło Ci utworzyć ten projekt :)
+
+Za tydzień nie będę mógł za bardzo zostać po zajęciach, ale bardzo chętnie porozmawiam o
+tym projekcie za dwa tygodnie - jestem pod dużym wrażeniem, chętnie poznam Twój proces
+twórczy i rozwieję ewentualne wątpliwości, jeżeli takowe się wysunęły podczas pisania projektu.
+Mogę również wraz z Tobą zastanowić się nad implementacją któregoś z poniższych podpunktów.
+
+Moje propozycje rozwinięcia pracy:
+- opcja edycji i usuwania ogłoszeń
+    - opcja tworzenia nowych kont (funkcja rejestracja) i wstawiania ogłoszeń z danego konta
+    - możliwość otwarcia profilu użytkownika i wyświetlenia jego wszystkich ogłoszeń (i ew. daty powstania konta)
+- zapisywanie ogłoszeń (i ew. rejestracji/loginów) do pliku
+- skompletowanie obsługi błędów (użyj try/except) - Twój program jest częściowo odporny na
+  błędy użytkownika, ale nie całkiem
+- data wpisu i data modyfikacji ogłoszenia
+
+"""
