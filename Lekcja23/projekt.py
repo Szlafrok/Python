@@ -60,6 +60,7 @@ class Gracz(Postac):
             if self.hp < 1:
                 print(f"{self.nazwa} poszedł spać (a mimir)")
                 return False
+        return None
 
 
 class Przeciwnik(Postac):
@@ -79,5 +80,23 @@ class Przeciwnik(Postac):
 ziomeczek = Gracz()
 gra = True
 
+wygrane_walki = 0
+
 while gra:
     przeciwnik = Przeciwnik()
+    print(f"{ziomeczek.nazwa} napotkał {przeciwnik.nazwa}")
+    gra = ziomeczek.walka(przeciwnik)
+
+    if gra:
+        wygrane_walki += 1
+
+print(wygrane_walki)
+
+
+# Zadanie domowe
+
+# Proszę dodać do walki możliwość leczenia się za pomocą zbudowanej przez nas
+# metody zjedz(). 
+
+# Za poprawność kodu 3p
+# Za sens pod kątem gry +1p
