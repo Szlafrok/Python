@@ -1,0 +1,1 @@
+# Lekcja24/Projekt/images/
