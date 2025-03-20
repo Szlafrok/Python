@@ -12,6 +12,6 @@ class Element(): # Klasa główna
         self.lista_obrazow = []
 
         for i in range(1, 4):
-            sciezka = f'{file_path}{typ}{i}.png'
+            sciezka = f'{file_path}{typ}{i}.png' # 
             wczytany_obraz = Obraz(sciezka)
             self.lista_obrazow.append(wczytany_obraz)
