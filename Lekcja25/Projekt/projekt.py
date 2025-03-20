@@ -12,6 +12,7 @@ obraz_postaci = pygame.image.load(file_path + 'base.png')
 pygame.init() # Inicjujemy moduł
 
 ekran = pygame.display.set_mode([SZEROKOSC_EKRANU, WYSOKOSC_EKRANU]) # Tworzymy obiekt ekranu ORAZ OKNO
+
 zegar = pygame.time.Clock() # Tworzymy obiekt zegara
 
 pygame.font.init()
@@ -29,6 +30,7 @@ def wypisz_tekst(ekran, tekst, pozycja):
 
 
 gra_dziala = True
+zapisywanie = False
 while gra_dziala:
 
     zdarzenia = pygame.event.get() # Lista zdarzeń w Pygame
@@ -46,6 +48,8 @@ while gra_dziala:
                 ubranie.wybierzNastepny()
             elif zdarzenie.key == pygame.K_r:
                 bron.wybierzNastepny()
+            elif zdarzenie.key == pygame.K_s:
+                zapisywanie = True
 
 
     ekran.blit(obraz_tla, (0, 0)) # dodanie do generowanego ekranu obrazu tła
@@ -56,9 +60,15 @@ while gra_dziala:
     ekran.blit(oczy.wybranyObraz(), (270, 130))
     ekran.blit(bron.wybranyObraz(), (270, 130))
 
-    wypisz_tekst(ekran, f"[Q] Głowa: {nakrycie_glowy.wybrany}", (100, 100))
+    wypisz_tekst(ekran, f"[Q] Głowa: {nakrycie_glowy.wybrany + 1}", (100, 100))
+    wypisz_tekst(ekran, f"[W] Oczy: {oczy.wybrany + 1}", (100, 140))
+    wypisz_tekst(ekran, f"[E] Tors: {ubranie.wybrany + 1}", (100, 180))
+    wypisz_tekst(ekran, f"[R] Broń: {bron.wybrany + 1}", (100, 220))
+    wypisz_tekst(ekran, f"[S] Zapisz (50zł)", (100, 260))
 
-
+    if zapisywanie:
+        pygame.image.save(ekran, f"{file_path}postac.png")
+        zapisywanie = False
 
     pygame.display.flip() # aktualizacja ekranu
 
