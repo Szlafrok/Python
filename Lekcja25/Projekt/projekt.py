@@ -14,10 +14,18 @@ pygame.init() # Inicjujemy moduł
 ekran = pygame.display.set_mode([SZEROKOSC_EKRANU, WYSOKOSC_EKRANU]) # Tworzymy obiekt ekranu ORAZ OKNO
 zegar = pygame.time.Clock() # Tworzymy obiekt zegara
 
+pygame.font.init()
+moja_czcionka = pygame.font.SysFont('Arial', 30)
+
 nakrycie_glowy = Element.NakrycieGlowy()
 ubranie = Element.Ubranie()
 oczy = Element.Oczy()
 bron = Element.Bron()
+
+def wypisz_tekst(ekran, tekst, pozycja):
+    napis = moja_czcionka.render(tekst, False, (255, 255, 255))
+    ekran.blit(napis, pozycja)
+    return
 
 
 gra_dziala = True
@@ -39,6 +47,7 @@ while gra_dziala:
             elif zdarzenie.key == pygame.K_r:
                 bron.wybierzNastepny()
 
+
     ekran.blit(obraz_tla, (0, 0)) # dodanie do generowanego ekranu obrazu tła
     ekran.blit(obraz_postaci, (270, 130)) # dodanie do generowanego ekranu obrazu postaci
 
@@ -46,6 +55,10 @@ while gra_dziala:
     ekran.blit(nakrycie_glowy.wybranyObraz(), (270, 130))
     ekran.blit(oczy.wybranyObraz(), (270, 130))
     ekran.blit(bron.wybranyObraz(), (270, 130))
+
+    wypisz_tekst(ekran, f"[Q] Głowa: {nakrycie_glowy.wybrany}", (100, 100))
+
+
 
     pygame.display.flip() # aktualizacja ekranu
 
