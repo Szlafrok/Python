@@ -1,6 +1,7 @@
-file_path = 'Lekcja25/Projekt/images/'
-
 import pygame # Wczytanie modułu Pygame
+import Element
+
+file_path = Element.file_path
 
 SZEROKOSC_EKRANU = 800
 WYSOKOSC_EKRANU = 600
@@ -13,6 +14,12 @@ pygame.init() # Inicjujemy moduł
 ekran = pygame.display.set_mode([SZEROKOSC_EKRANU, WYSOKOSC_EKRANU]) # Tworzymy obiekt ekranu ORAZ OKNO
 zegar = pygame.time.Clock() # Tworzymy obiekt zegara
 
+nakrycie_glowy = Element.NakrycieGlowy()
+ubranie = Element.Ubranie()
+oczy = Element.Oczy()
+bron = Element.Bron()
+
+
 gra_dziala = True
 while gra_dziala:
 
@@ -23,9 +30,22 @@ while gra_dziala:
         elif zdarzenie.type == pygame.KEYDOWN: # typ zdarzenia - wciśnięty klawisz
             if zdarzenie.key == pygame.K_ESCAPE: # okreslenie wciśniętego klawisza jako ESCAPE
                 gra_dziala = False
+            elif zdarzenie.key == pygame.K_q:
+                nakrycie_glowy.wybierzNastepny()
+            elif zdarzenie.key == pygame.K_w:
+                oczy.wybierzNastepny()
+            elif zdarzenie.key == pygame.K_e:
+                ubranie.wybierzNastepny()
+            elif zdarzenie.key == pygame.K_r:
+                bron.wybierzNastepny()
 
     ekran.blit(obraz_tla, (0, 0)) # dodanie do generowanego ekranu obrazu tła
     ekran.blit(obraz_postaci, (270, 130)) # dodanie do generowanego ekranu obrazu postaci
+
+    ekran.blit(ubranie.wybranyObraz(), (270, 130))
+    ekran.blit(nakrycie_glowy.wybranyObraz(), (270, 130))
+    ekran.blit(oczy.wybranyObraz(), (270, 130))
+    ekran.blit(bron.wybranyObraz(), (270, 130))
 
     pygame.display.flip() # aktualizacja ekranu
 

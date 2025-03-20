@@ -1,6 +1,6 @@
 import pygame
 
-from projekt import file_path
+file_path = 'Lekcja25/Projekt/images/'
 
 class Obraz(): # Klasa pomocnicza
     def __init__(self, sciezka):
@@ -29,8 +29,16 @@ class NakrycieGlowy(Element):
     def __init__(self):
         super().__init__('head')
 
-# Ubranie
+class Ubranie(Element):
+    def __init__(self):
+        super().__init__('body')
 
-# Oczy
 
-# Bron
+class Oczy(Element):
+    def __init__(self):
+        super().__init__('eye')
+
+
+class Bron(Element):
+    def __init__(self):
+        super().__init__('weapon')
