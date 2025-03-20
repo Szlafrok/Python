@@ -2,12 +2,11 @@ import pygame
 
 from projekt import file_path
 
-class Obraz(pygame.sprite.Sprite):
+class Obraz(): # Klasa pomocnicza
     def __init__(self, sciezka):
-        super().__init__()
         self.obraz = pygame.image.load(sciezka)
 
-class Element():
+class Element(): # Klasa główna
     def __init__(self, typ):
         self.wybrany = 0
         self.lista_obrazow = []

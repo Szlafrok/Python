@@ -1,9 +1,9 @@
 import pygame
 
 #klasa pomocnicza obraz
-class Obraz(pygame.sprite.Sprite):
+class Obraz():
     def __init__(self, sciezka):
-        super().__init__()
+        #super().__init__()
         self.obraz = pygame.image.load(sciezka)
 
 #klasa bazowa
