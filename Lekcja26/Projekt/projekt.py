@@ -19,6 +19,8 @@ pygame.init()
 ekran = pygame.display.set_mode([SZEROKOSC_EKRANU, WYSOKOSC_EKRANU])
 zegar = pygame.time.Clock()
 
+pygame.display.set_caption("Snake Python")
+
 jablko = Jablko()
 jablka = pygame.sprite.Group()
 jablka.add(jablko)
