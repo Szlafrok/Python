@@ -1,3 +1,5 @@
+### Zadanie przepisane z oficjalnych materiałów do Gigathonu. Nie jestem jego autorem
+
 ## KRYTERIA OCENY
 
 - Spełnienie założeń projektu: 0 - 30 pkt
