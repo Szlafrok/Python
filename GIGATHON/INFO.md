@@ -11,12 +11,12 @@ Dysk Google z quizami i linkiem do materiałów:
 
 ### Quizy:
 - Quizy rozwiązujemy na platformie Quizizz lub w aplikacji pobranej z dysku Google - poszczególne quizy mają zapisane, gdzie ich szukać
-- Quizy są sprawdzane automatycznie (w niektórych trzeba wysłać wynik e-mailem), natomiast w razie jakichkolwiek pytań można bez problemu zadać je na e-mailu lub pod koniec czwartkowych zajęć :D
+- Quizy są sprawdzane automatycznie (w niektórych trzeba wysłać wynik e-mailem), natomiast w razie jakichkolwiek pytań proszę śmiało je zadawać
 - Quiz Q2, oznaczony jako powtórkowy, jest quizem z materiałów, także zachęcam do przećwiczenia w szczególności jego!
 
 ### Projekty:
 - Projekt nieukończony możemy wysłać do wglądu, wówczas postaram się dać możliwie najlepsze rady odnośnie tego, co należy poprawić
-- Kiedy ktoś wyśle mi finalną wersję projektu, ocenię ją zgodnie z kryteriami określonymi w regułach Gigathonu, aby dać możliwie najlepszy pogląd na to, na co zwracać uwagę przy tworzeniu tego typu prac
+- Kiedy ktoś pokaże mi finalną wersję projektu, ocenię ją zgodnie z kryteriami określonymi w regułach Gigathonu, aby dać możliwie najlepszy pogląd na to, na co zwracać uwagę przy tworzeniu tego typu prac
 
 ### Zadania:
-- Podobnie jak dotąd, zadania odsyłamy mi na adres e-mail. Wówczas będę odsyłał swoje komentarze ;D
+- Działają jak zwykłe zadania domowe do tego momentu ;D

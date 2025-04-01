@@ -1,5 +1,5 @@
 ### QUIZ POWTÓRZENIOWY (0-12 pkt)
-### TERMIN WYKONANIA: 14.04.2025
+### TERMIN WYKONANIA: 13.04.2025
 
 https://quizizz.com/join?gc=05272964
 - w quizie podpisujemy się imieniem i nazwiskiem
