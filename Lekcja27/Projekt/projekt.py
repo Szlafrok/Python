@@ -2,6 +2,8 @@ import pygame
 import random
 from Jablko import Jablko
 from file_path import file_path
+from Waz import Waz
+from Kierunek import Kierunek
 
 SZEROKOSC_EKRANU = 800
 WYSOKOSC_EKRANU = 608
@@ -21,6 +23,12 @@ zegar = pygame.time.Clock()
 
 pygame.display.set_caption("Snake Python")
 
+
+waz = Waz()
+PORUSZ_WEZEM = pygame.USEREVENT + 1
+pygame.time.set_timer(PORUSZ_WEZEM, 200)
+
+
 jablko = Jablko()
 jablka = pygame.sprite.Group()
 jablka.add(jablko)
@@ -35,11 +43,24 @@ while gra_dziala:
         if zdarzenie.type == pygame.KEYDOWN:
             if zdarzenie.key == pygame.K_ESCAPE:
                 gra_dziala = False
+            if zdarzenie.key == pygame.K_w:
+                waz.zmien_kierunek(Kierunek.GORA)
+            if zdarzenie.key == pygame.K_d:
+                waz.zmien_kierunek(Kierunek.PRAWO)
+            if zdarzenie.key == pygame.K_s:
+                waz.zmien_kierunek(Kierunek.DOL)
+            if zdarzenie.key == pygame.K_a:
+                waz.zmien_kierunek(Kierunek.LEWO)
+        if zdarzenie.type == PORUSZ_WEZEM:
+            waz.aktualizuj()
+
 
     ekran.blit(tlo, (0, 0))
 
     for jablko in jablka:
         ekran.blit(jablko.obraz, jablko.rect)
+
+    ekran.blit(waz.obraz, waz.rect)
 
     pygame.display.flip()
 
