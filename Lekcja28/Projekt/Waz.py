@@ -2,6 +2,7 @@ import pygame
 import copy
 from Kierunek import Kierunek
 from file_path import file_path
+from Segment import Segment
 
 class Waz(pygame.sprite.Sprite):
     def __init__(self):
@@ -49,3 +50,23 @@ class Waz(pygame.sprite.Sprite):
                 self.segmenty[0].przesun(self.ostatnia_pozycja)
             else:
                 self.segmenty[i].przesun(self.segmenty[i-1].ostatnia_pozycja)
+
+        if self.dodaj_segment:
+            nowy_segment = Segment()
+
+            nowa_pozycja = None
+            if self.segmenty != []:
+                nowa_pozycja = copy.deepcopy(self.ostatnia_pozycja)
+            else:
+                nowa_pozycja = copy.deepcopy(self.segmenty[-1])
+
+            nowy_segment.pozycja = nowa_pozycja
+            self.segmenty.append(nowy_segment)
+            self.dodaj_segment = False
+
+    def rysuj_segmenty(self, ekran):
+        for seg in self.segmenty:
+            ekran.blit(seg.obraz, seg.pozycja)
+
+    def mniam(self):
+        self.dodaj_segment = True
