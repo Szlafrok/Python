@@ -55,10 +55,10 @@ class Waz(pygame.sprite.Sprite):
             nowy_segment = Segment()
 
             nowa_pozycja = None
-            if self.segmenty != []:
+            if len(self.segmenty) == 0:
                 nowa_pozycja = copy.deepcopy(self.ostatnia_pozycja)
             else:
-                nowa_pozycja = copy.deepcopy(self.segmenty[-1])
+                nowa_pozycja = copy.deepcopy(self.segmenty[-1].pozycja)
 
             nowy_segment.pozycja = nowa_pozycja
             self.segmenty.append(nowy_segment)

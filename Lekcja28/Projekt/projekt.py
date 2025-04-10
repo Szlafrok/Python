@@ -76,5 +76,4 @@ while gra_dziala:
 
     zegar.tick(30)
 
-
 pygame.quit()
