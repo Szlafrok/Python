@@ -1,0 +1,43 @@
+import pygame
+import copy
+from Kierunek import Kierunek
+from file_path import file_path
+
+class Waz(pygame.sprite.Sprite):
+    def __init__(self):
+        self.oryginalny_obraz = pygame.image.load(f"{file_path}head.png")
+        self.obraz = pygame.transform.rotate(self.oryginalny_obraz, 0)
+        self.rect = self.obraz.get_rect(center = (12*32+16, 9*32+16))
+
+        self.kierunek = Kierunek.GORA
+        self.nowy_kierunek = Kierunek.GORA
+
+        self.ostatnia_pozycja = self.rect
+        self.dodaj_segment = False
+        self.segmenty = []
+
+    def zmien_kierunek(self, kierunek):
+        zmiana_mozliwa = True
+        if kierunek == Kierunek.GORA and self.kierunek == Kierunek.DOL:
+            zmiana_mozliwa = False
+        if kierunek == Kierunek.DOL and self.kierunek == Kierunek.GORA:
+            zmiana_mozliwa = False
+        if kierunek == Kierunek.LEWO and self.kierunek == Kierunek.PRAWO:
+            zmiana_mozliwa = False
+        if kierunek == Kierunek.PRAWO and self.kierunek == Kierunek.LEWO:
+            zmiana_mozliwa = False
+        if zmiana_mozliwa:
+            self.nowy_kierunek = kierunek
+
+    def aktualizuj(self):
+        self.kierunek = self.nowy_kierunek
+        self.obraz = pygame.transform.rotate(self.oryginalny_obraz, self.kierunek.value * (-90))
+
+        if self.kierunek == Kierunek.GORA:
+            self.rect.move_ip(0, -32)
+        if self.kierunek == Kierunek.PRAWO:
+            self.rect.move_ip(32, 0)
+        if self.kierunek == Kierunek.DOL:
+            self.rect.move_ip(0, 32)
+        if self.kierunek == Kierunek.LEWO:
+            self.rect.move_ip(-32, 0)
