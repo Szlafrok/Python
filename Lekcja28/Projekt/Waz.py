@@ -33,6 +33,8 @@ class Waz(pygame.sprite.Sprite):
         self.kierunek = self.nowy_kierunek
         self.obraz = pygame.transform.rotate(self.oryginalny_obraz, self.kierunek.value * (-90))
 
+        self.ostatnia_pozycja = copy.deepcopy(self.rect)
+
         if self.kierunek == Kierunek.GORA:
             self.rect.move_ip(0, -32)
         if self.kierunek == Kierunek.PRAWO:
@@ -41,3 +43,9 @@ class Waz(pygame.sprite.Sprite):
             self.rect.move_ip(0, 32)
         if self.kierunek == Kierunek.LEWO:
             self.rect.move_ip(-32, 0)
+
+        for i in range(len(self.segmenty)):
+            if i == 0:
+                self.segmenty[0].przesun(self.ostatnia_pozycja)
+            else:
+                self.segmenty[i].przesun(self.segmenty[i-1].ostatnia_pozycja)
