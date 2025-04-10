@@ -70,3 +70,16 @@ class Waz(pygame.sprite.Sprite):
 
     def mniam(self):
         self.dodaj_segment = True
+
+
+    def sprawdz_kolizje(self):
+        for segment in self.segmenty:
+            if self.rect.topleft == segment.pozycja.topleft:
+                return True
+            
+        if self.rect.top < 0 or self.rect.top >= 608:
+            return True
+        if self.rect.left < 0 or self.rect.left >= 800:
+            return True
+        
+        return False
