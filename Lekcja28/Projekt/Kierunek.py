@@ -4,4 +4,6 @@ class Kierunek(Enum):
     GORA = 0
     PRAWO = 1
     DOL = 2
-    LEWO = 3
+    LEWO = 3 # zapisujemy stałe.
+
+    # Dziedziczenie po Enum umożliwia nam
