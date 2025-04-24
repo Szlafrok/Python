@@ -27,11 +27,11 @@ class Kulka(pygame.sprite.Sprite):
 
     
     def sprawdz_kolizje(self, platforma):
-        if self.rect.x <= 0:
+        if self.rect.left <= 0:
             self.wektor.x *= -1
         if self.rect.right >= SZEROKOSC_EKRANU:
             self.wektor.x *= -1
-        if self.rect.y <= 0:
+        if self.rect.top <= 0:
             self.wektor.y *= -1
         if self.rect.bottom >= WYSOKOSC_EKRANU:
             self.przegrana = True
