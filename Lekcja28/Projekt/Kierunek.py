@@ -6,4 +6,5 @@ class Kierunek(Enum):
     DOL = 2
     LEWO = 3 # zapisujemy stałe.
 
-    # Dziedziczenie po Enum umożliwia nam
+    # Dziedziczenie po Enum umożliwia nam odwołanie się później do konkretnej wartości stałej
+    # za pomocą self.kierunek.value

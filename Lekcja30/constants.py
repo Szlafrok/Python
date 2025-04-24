@@ -1,0 +1,6 @@
+file_path = "Lekcja30/images/"
+
+SZEROKOSC_EKRANU = 1024
+WYSOKOSC_EKRANU = 800
+
+PREDKOSC = 10
