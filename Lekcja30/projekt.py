@@ -1,6 +1,7 @@
 import pygame
 from constants import *
 from platforma import Platforma
+from kulka import Kulka
 
 pygame.init()
 ekran = pygame.display.set_mode([SZEROKOSC_EKRANU, WYSOKOSC_EKRANU])
@@ -9,7 +10,7 @@ zegar = pygame.time.Clock()
 obraz_tla = pygame.image.load(f"{file_path}background.png")
 
 platforma = Platforma() # tworzymy obiekt platformy
-
+kulka = Kulka()
 
 gra_dziala = True
 while gra_dziala:
@@ -27,8 +28,13 @@ while gra_dziala:
     if keys[pygame.K_d]:
         platforma.ruszaj_platforma(1)
 
+    kulka.aktualizuj(platforma)
+    platforma.aktualizuj()
+
+
     ekran.blit(obraz_tla, (0, 0)) # wstawiamy tło...
     ekran.blit(platforma.obraz, platforma.rect) #... i platformę!
+    ekran.blit(kulka.obraz, kulka.rect)
 
     pygame.display.flip()
 
