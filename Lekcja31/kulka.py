@@ -49,5 +49,14 @@ class Kulka(pygame.sprite.Sprite):
                 klocek.uderzenie()
                 break
         
-    def kolizja_z_klockiem(self, klocek):
-        pass
+    def kolizja_z_klockiem(self, kulka, klocek):
+        dystans_x = abs(kulka.rect.centerx - klocek.rect.centerx) - klocek.rect.w / 2 - kulka.r
+        dystans_y = abs(kulka.rect.centery - klocek.rect.centery) - klocek.rect.h / 2 - kulka.r
+
+        if dystans_x <= 0 and dystans_y <= 0:
+            if dystans_x < dystans_y:
+                self.wektor.y *= -1
+            else:
+                self.wektor.x *= -1 # Zadanie dodatkowe: rozważyć przypadek, gdzie piłka odbija się od kantu (2pkt)
+            return True
+        return False

@@ -2,6 +2,7 @@ import pygame
 from constants import *
 from platforma import Platforma
 from kulka import Kulka
+from klocek import Klocek
 
 pygame.init()
 pygame.font.init()
@@ -12,8 +13,38 @@ zegar = pygame.time.Clock()
 czcionka = pygame.font.SysFont("Arial", 24)
 
 zycia = ZYCIA
+poziom = 0
 
 obraz_tla = pygame.image.load(f"{file_path}background.png")
+
+# poziomy gry
+poziom1 = [
+    [0, 0, 1, 1, 1, 1, 1, 1, 0, 0],
+    [0, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+    [0, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+    [0, 0, 1, 1, 1, 1, 1, 1, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+]
+poziom2 = [
+    [0, 0, 1, 2, 3, 3, 2, 1, 0, 0],
+    [0, 1, 1, 1, 2, 2, 1, 1, 1, 0],
+    [0, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+    [0, 0, 1, 1, 1, 1, 1, 1, 0, 0],
+    [0, 0, 2, 0, 0, 0, 0, 2, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 2, 0, 2, 0, 0, 2, 0, 2, 0]
+]
+poziom3 = [
+    [2, 3, 2, 2, 2, 2, 2, 2, 3, 2],
+    [2, 1, 3, 1, 1, 1, 1, 3, 1, 2],
+    [2, 3, 1, 3, 1, 1, 3, 1, 3, 2],
+    [3, 2, 2, 2, 3, 3, 2, 2, 2, 3],
+    [0, 0, 2, 2, 3, 3, 2, 2, 0, 0],
+    [0, 0, 2, 0, 3, 3, 0, 2, 0, 0],
+    [0, 0, 3, 0, 3, 3, 0, 3, 0, 0]
+]
 
 platforma = Platforma() # tworzymy obiekt platformy
 kulka = Kulka()
