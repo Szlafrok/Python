@@ -17,7 +17,7 @@ class Klocek(pygame.sprite.Sprite):
             maska_koloru = (0, 0, 128)
         if self.zdrowie == 1:
             maska_koloru = (0, 128, 128)
-        self.obraz = copy.deepcopy(self.obraz_oryginalny)
+        self.obraz = copy.copy(self.obraz_oryginalny)
         self.obraz.fill(maska_koloru, special_flags=pygame.BLEND_ADD)
 
     def update(self):
