@@ -1,4 +1,4 @@
-### Zadania dodatkowe do Snake'a
+### Zadania dodatkowe do Arkanoida
 Do wyboru, do koloru - krótkie zadanka na ćwiczenie :D
 - Proszę wczytać czcionkę i utworzyć zegar mierzący czas gry [2 pkt]
 - Proszę uzupełnić skrypt sterujący tak, aby reagował także na strzałki [1 pkt]

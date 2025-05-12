@@ -1,5 +1,4 @@
 ### PRÓBNY QUIZ - GIGATHON, ETAP 1 (0-25 pkt)
-### TERMIN WYKONANIA: 30.04.2025
 ### zaczerpnięty z powszechnych materiałów do Gigathonu
 
 Plik "Python Gigathon - Q1" na Dysku Google. Plik należy pobrać i uruchomić.

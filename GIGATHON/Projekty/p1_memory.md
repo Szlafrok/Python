@@ -14,7 +14,6 @@
 > (w przeliczeniu na ranking ćwiczeń do 50 pkt)
 
 # ZADANIE
-*Termin wykonania: 30.04*
 
 Proszę napisać program konsolowy (bez użycia bibliotek graficznych) będący grą w Memory dla 2 osób.
 
