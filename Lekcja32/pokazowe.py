@@ -6,7 +6,8 @@ class Stack():
         self.stack.append(item)
 
     def pop(self):
-        return self.stack.pop()
+        if not self.is_empty():
+            return self.stack.pop()
     
     def peek(self):
         if not self.is_empty():
@@ -35,3 +36,25 @@ print(stack.size())
 print(stack.pop())
 print(stack.peek())
 print(stack.pop())
+
+# Stos: Last In First Out
+# Kolejka: First In First Out
+
+class Queue():
+    def __init__(self):
+        self.queue = []
+    
+    def is_empty(self):
+        return len(self.queue) == 0
+    
+    def enqueue(self, item):
+        self.queue.append(item)
+
+    def peek(self):
+        if not self.is_empty():
+            return self.queue[0]
+        
+    def dequeue(self):
+        if not self.is_empty():
+            return self.queue.pop(0)
+        
