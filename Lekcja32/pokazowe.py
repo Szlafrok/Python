@@ -58,3 +58,16 @@ class Queue():
         if not self.is_empty():
             return self.queue.pop(0)
         
+queue = Queue()
+
+queue.enqueue(1)
+queue.enqueue(2)
+queue.enqueue(3)
+
+print(queue.dequeue())
+print(queue.dequeue())
+print(queue.is_empty())
+print(queue.dequeue())
+print(queue.dequeue())
+
+
