@@ -16,8 +16,4 @@ print(palindrom('radar'))
 
 # Zadanie zrobione bezbłędnie i zgrabnie. Gratuluję :)
 
-<<<<<<< HEAD
 # (4/4)
-=======
-# ()
->>>>>>> d3bf0a4cad53c814661467a3e1fe74876e90de0b
