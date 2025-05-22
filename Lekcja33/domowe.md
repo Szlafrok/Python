@@ -14,6 +14,7 @@ najwięcej prób. Ile będzie potrzebował tych prób?)
 
 ### Zadanie dodatkowe
 *Termin wykonania: 05.06 / +5 pkt*
+*Vincent, Wiktor, Patryk, Bazi*
 
 https://www.algorytm.edu.pl/grafy/bfs.html
 Algorytm BFS (Przeszukiwanie wszerz) to wykorzystujący kolejki algorytm służący do przeszukiwania grafów. Każdy graf w matematyce to połączenie wierzchołków i krawędzi je łączących. Za pomocą grafu możemy przykładowo utworzyć mapę międzymiejskich połączeń kolejowych, tak jak na rysunku w pliku miasta.png. 
