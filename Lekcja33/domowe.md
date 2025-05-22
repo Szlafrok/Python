@@ -16,6 +16,7 @@ najwięcej prób. Ile będzie potrzebował tych prób?)
 
 ### 2)
 *Termin wykonania: 05.06 / 4 pkt*
+
 https://pl.wikipedia.org/wiki/Sortowanie_przez_wybieranie
 
 Sortowanie przez wybór to typ sortowania, który działa w następujący sposób:
