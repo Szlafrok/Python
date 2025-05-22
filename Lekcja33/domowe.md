@@ -19,7 +19,7 @@ https://www.algorytm.edu.pl/grafy/bfs.html
 Algorytm BFS (Przeszukiwanie wszerz) to wykorzystujący kolejki algorytm służący do przeszukiwania grafów. Każdy graf w matematyce to połączenie wierzchołków i krawędzi je łączących. Za pomocą grafu możemy przykładowo utworzyć mapę międzymiejskich połączeń kolejowych, tak jak na rysunku w pliku miasta.png. 
 
 Taki graf możemy przedstawić w formie tzw. listy sąsiedztwa - listy zawierającej listę wierzchołków, gdzie wewnętrzna lista o danym indeksie przechowuje wszystkie punkty, z którymi sąsiaduje dany wierzchołek. Dla przykładu z obrazka lista będzie wyglądać tak:
-
+```py
 MIASTA = [
     [1],
     [0, 2, 3],
@@ -27,7 +27,7 @@ MIASTA = [
     [2, 4],
     [3]
 ]
-
+```
 oznacza to, że miasto 0 jest połączone z miastem 1, miasto 1 jest połączone z miastami 0, 2 i 3, etc.
 
 Algorytm BFS przyjmuje wybrane miasto jako punkt startowy i przeszukuje graf warstwami. W każdym kolejnym cyklu rozpatruje **sąsiadów miast, którzy byli sprawdzani poprzednio.** Zapisujemy przy tym, które miasto zostało już
@@ -40,7 +40,7 @@ odwiedzone, aby nie rozpatrywać go ponownie.
 
 W praktyce ten algorytm opiera się na kolejce. Tworzymy listy na podstawie liczby wierzchołków:
 
-```
+```py
 from math import inf
 
 n = len(MIASTA)
