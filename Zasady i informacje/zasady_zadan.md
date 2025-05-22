@@ -1,3 +1,6 @@
+### Zadania domowe wysyłają rodzice i dodają do odbiorców maila: sekretariat@giganciprogramowania.edu.pl
+
+
 # Zasady nagród za zadania domowe
 
 - Za każde wykonane zadanie można uzyskać od 0 do 5 punktów

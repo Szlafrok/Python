@@ -1,4 +1,6 @@
-### Zadanie domowe
+## Zadanie domowe
+
+### 1)
 *Termin wykonania: 05.06 / 4 pkt*
 
 Proszę napisać program, który losuje i podaje użytkownikowi losową liczbę z zakresu 1000.
@@ -12,7 +14,24 @@ liczbie prób.
 (Bonusowe 1.5 pkt: Proszę podać i uzasadnić, dla jakiej przykładowo wylosowanej liczby komputer będzie potrzebował
 najwięcej prób. Ile będzie potrzebował tych prób?)
 
-### Zadanie dodatkowe
+### 2)
+*Termin wykonania: 05.06 / 4 pkt*
+https://pl.wikipedia.org/wiki/Sortowanie_przez_wybieranie
+
+Sortowanie przez wybór to typ sortowania, który działa w następujący sposób:
+
+Wybieramy granice przedziału `low = 0` oraz `high = n - 1`. Z przedziału tablicy od `low` do `high` wybieramy element największy i zamieniamy go miejscami z elementem ostatnim. Zmniejszamy high o 1 i wybieramy element największy spośród nowego przedziału, z którego usunęliśmy poprzedni element największy. W ten sposób wybieramy kolejne elementy największe i układamy je po kolei od końca, uzyskując posortowaną rosnąco listę.
+
+Proszę zaimplementować funkcję
+```py
+def selection_sort(arr: list) -> list:
+    pass
+```
+która zwróci posortowaną listę `arr`. Program powinien wykorzystywać zapisaną na lekcji funkcję `find_max()` oraz algorytm sortowania przez wybór.
+
+
+
+## Zadanie dodatkowe
 *Termin wykonania: 05.06 / +5 pkt*
 *Vincent, Wiktor, Patryk, Bazi*
 
