@@ -5,9 +5,3 @@
 
 *Termin wykonania: 29.05 / 2 pkt*
 2. Proszę napisać polecenia sprawdzające poprawne działanie CinemaQueue w pliku kino.py
-
-
-### Zadanie dodatkowe
-*Termin wykonania: 29.05 / +3 pkt*
-
-Pojawi się 16.05 w godzinach popołudniowych.
