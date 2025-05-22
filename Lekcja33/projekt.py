@@ -45,5 +45,17 @@ print("----------------------------")
 liczby = losowe()
 print(liczby)
 
-def bubble_sort():
-    
+def bubble_sort(liczby):
+    n = len(liczby)
+    for i in range(n):
+        for j in range(0, n-1-i):
+            if liczby[j+1] > liczby[j]:
+                liczby[j], liczby[j+1] = liczby[j+1], liczby[j]
+    return liczby
+
+liczby = bubble_sort(liczby)
+print(liczby)
+
+
+def is_in(liczby, val): # nie wolno zrobić np. return liczby in val
+    pass
