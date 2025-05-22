@@ -54,7 +54,7 @@ Algorytm korzysta z kolejki, aby przechowywać kolejne wierzchołki, które będ
 - badamy, czy ma sąsiadów, których jeszcze nie odwiedziliśmy; jeżeli tak, dodajemy ich do kolejki i oznaczamy jako odwiedzonych.
 
 W pseudokodzie wygląda to tak:
-
+```
 utwórz listę przechowującą odległości od miasta startowego
 utwórz listę True/False, przechowującą informację czy dane miasto zostało odwiedzone
 utwórz kolejkę
@@ -70,7 +70,7 @@ dopóki kolejka nie jest pusta:
             oznacz sąsiada jako odwiedzony
 
 wypisz do konsoli listę odległości
-
+```
 Dla naszego przykładu z pliku miasta.png - określamy miasto 0 jako startowe:
 1. Wkładamy do kolejki miasto 0
 2. Wyjmujemy z kolejki miasto 0
