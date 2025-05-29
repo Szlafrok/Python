@@ -1,0 +1,14 @@
+[
+    {
+        "text":"Witaj krasnalu!",
+        "color":"red",
+        "bold":true,
+        "italic":true
+    },
+    {
+        "text":"Wrotki pomidor",
+        "color":"blue",
+        "bold":false,
+        "italic":false
+    }
+]
