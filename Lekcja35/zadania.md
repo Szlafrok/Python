@@ -35,7 +35,7 @@ Powodzenia!
 > - Posortuj listę
 > - Utwórz kopię listy
 > - Odwróć kolejność elementów w kopii
-> - Dodaj do każdej wartości w pierwszej listy 1, a w drugiej odejmij 1
+> - Dodaj do każdej wartości w oryginalnej liście 1, a w kopii odejmij 1
 > - Wyświetl obie listy
 
 3. (3 pkt) Proszę napisać funkcję, która przyjmie jako argument listę liczb całkowitych, a następnie usunie z niej powtarzające się elementy (jeżeli są 3 takie same elementy, powinien zostać tylko 1) i zwróci tak poprawioną listę.
