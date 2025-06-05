@@ -1,0 +1,1 @@
+Proszę napisać program, w którym stworzysz listę 10 losowych liczb całkowitych, a następnie wypiszesz co drugą z nich.
