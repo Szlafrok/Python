@@ -47,15 +47,28 @@ print(papaja.index(None))
 #papaja.pop(papaja.index("kremówka"))
 
 # count
-
+print(papaja.count("kebab"))
 
 
 # sort
+#papaja.sort()
+
 
 # [Ćwiczenie!]
 
 # reverse
+papaja.reverse()
+print(papaja)
+
+print(papaja[::-1])
 
 # copy
+marakuja = papaja.copy()
+print(marakuja)
+marakuja[0] = "ananasy z ósmej klasy"
+print(marakuja)
+print(papaja)
 
 # clear
+marakuja.clear()
+print(marakuja)
