@@ -1,4 +1,4 @@
-(+3 pkt)
+(+3 pkt) (1.07.2025)
 
 Proszę przygotować struktury przechowująceuprawnienia poszczególnych użytkowników - przykładowo użytkownicy: `root`, `admin`, `operator`, `user`, `guest`, itd. Przykładowo:
 ```py
