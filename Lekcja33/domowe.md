@@ -1,7 +1,7 @@
 ## Zadanie domowe
 
-### 1)
-*Termin wykonania: 05.06 / 4 pkt*
+### 1) Gra w większe/mniejsze
+*Termin wykonania: 01.07 / 4 pkt*
 
 Proszę napisać program, który losuje i podaje użytkownikowi losową liczbę z zakresu 1000.
 Proszę następnie napisać program, który będzie zgadywał tę liczbę, a my będziemy udzielać mu odpowiedzi
@@ -14,8 +14,8 @@ liczbie prób.
 (Bonusowe 1.5 pkt: Proszę podać i uzasadnić, dla jakiej przykładowo wylosowanej liczby komputer będzie potrzebował
 najwięcej prób. Ile będzie potrzebował tych prób?)
 
-### 2)
-*Termin wykonania: 05.06 / 4 pkt*
+### 2) Sortowanie przez wybór
+*Termin wykonania: 01.07 / 4 pkt*
 
 https://pl.wikipedia.org/wiki/Sortowanie_przez_wybieranie
 
@@ -32,7 +32,7 @@ która zwróci posortowaną listę `arr`. Program powinien wykorzystywać zapisa
 
 
 
-## Zadanie dodatkowe
+## Zadanie dodatkowe // Przeszukiwanie wszerz
 *Termin wykonania: 05.06 / +5 pkt*
 *Vincent, Wiktor, Patryk, Bazi*
 
