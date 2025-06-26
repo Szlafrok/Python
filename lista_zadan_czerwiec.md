@@ -8,6 +8,7 @@ Treści zadań znajdują się w odpowiadających lekcjom folderach! Jeżeli dane
 ### Lekcja 33 - Budowanie i analiza algorytmów 22.05
 1. Gra w większe/mniejsze (4 pkt)
 2. Sortowanie przez wybór (4 pkt)
+3. Przeszukiwanie wszerz (+5 pkt)
 
 ### Lekcja 34 - Słowniki i JSON 29.05
 Brak zadań domowych!
