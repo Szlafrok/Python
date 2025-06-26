@@ -21,6 +21,7 @@ def is_prime(n: int) -> bool: # zwraca True gdy n jest pierwsze, False jeżeli n
 slowa = ["ala", "kot", "pies", "kamilslimak", "zebra", "madam", "Adam"]
 ```
 napisz wyrażenie listowe, które utworzy listę zawierającą same palindromy (wyrażenie brzmiące tak samo czytane od lewej do prawej i od prawej do lewej). Następnie wypisz proszę 
+
 *Wskazówka - dla listy lub stringa `a` odwrócenie jego kolejności osiągamy wyrażeniem `a = a[::-1]`*
 
 3. Na podstawie listy krotek zawierającej długości boków trójkąta stwórz listę zawierającą tylko krotki z których można skonstruować trójkąt (warunek - najdłuższy bok musi być krótszy niż suma dwóch pozostałych).

@@ -37,3 +37,50 @@ lista = [c for c in sequence if not(c.isalpha())]
 
 sequence = "".join(lista)
 print(sequence)
+
+
+
+
+try: # TEEF
+    # Fragment kodu który sprawdzamy pod kątem wyjątków
+    print(5 / 0)
+except Exception as e:
+    # Wykryto wyjątek
+    print(e)
+else:
+    # Nie wykryto wyjątku
+    print("OK")
+finally:
+    # Wykonuje się w następnej kolejności
+    print("pies spawacz")
+
+
+def parzyste(a, b):
+    try:
+        if a % 2 == 1 or b % 2 == 1:
+            raise Exception("Podane argumenty nie są parzyste!")
+    except Exception as e:
+        print(e)
+        return None
+
+    return a + b
+    
+print(parzyste(5, 10))
+
+print("----------------------------")
+
+def podziel(zdanie):
+    try:
+        if not zdanie[0].isupper():
+            raise Exception("Zdanie musie zaczynać się wielką literą!")
+        elif not zdanie[-1] in ["!", "?", "."]:
+            raise Exception("Zdanie musi kończyć się poprawnym znakiem interpunkcyjnym")
+    except Exception as e:
+        print(e)
+    else:
+        print(zdanie.split(" "))
+    finally:
+        print("Koniec programu!")
+
+podziel("Ala ma kota!")
+podziel("hesia ma kebaba!")
