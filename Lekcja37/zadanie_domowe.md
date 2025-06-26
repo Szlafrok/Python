@@ -2,7 +2,6 @@
 - Listy z liczbami od 1 do 10.
 - Krotki z liczbami od 11 do 20.
 - Zbioru z liczbami od 21 do 30.
-- Zakresu od 31 do 40
 
 b. Proszę następnie napisać wyrażenia listowe generujące listy pierwiastków liczb zawartch w tych strukturach danych (0-1 pkt)
 ```py
