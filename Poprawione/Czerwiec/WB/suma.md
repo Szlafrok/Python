@@ -10,5 +10,5 @@ Komentarze do zadań zawarłem w poszczególnych plikach :)
 | Unikaty                  | **-**      |  3.00         |
 | Kontrola uprawnień (★)   | **+3.00** |  3.00 (bonus) |
 | Listy pierwiastków       | **4.25**   |  4.00         |
-| Sprawdzanie hasła        | **5.00**   |  4.00         |
-| **RAZEM**                | **29.25**  |  27.00        |
+| Sprawdzanie hasła        | **6.00**   |  4.00         |
+| **RAZEM**                | **30.25**  |  27.00        |

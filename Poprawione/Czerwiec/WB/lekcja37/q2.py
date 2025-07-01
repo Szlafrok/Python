@@ -53,4 +53,6 @@ if __name__ == "__main__":
 # Naprawdę robi wrażenie! Wybiegłeś mocno do przodu, o Regexie będziemy się uczyli w drugiej połowie lipca.
 # Podobnie jak w zadaniu z lekcji 36, poprosiłbym Cię o krótkie omówienie wykorzystanej przez Ciebie funkcji re.search(), oki?
 
-# (4p / 4p) (+1 bonus za zaawansowanie!)
+# (4p / 4p) (+1 bonus za zaawansowanie!) (+1p za zwracanie powodu)
+
+# Aktualizacja: nie dopatrzyłem 1 rzeczy w rozpatrywaniu zadania, w zwiazku z poprawką dodałem 1pkt
