@@ -1,4 +1,4 @@
-## Lista zdań - Czerwiec
+## Lista zadań - Czerwiec
 *Łącznie 27 pkt*
 W tym miejscu znajdziesz listę zadań, które wysyłamy do **1 lipca 2025 roku**! Proszę, żeby rozwiązania zbiorowo wysłali do Wasi rodzice na e-maile: **kamiennygigant@gmail.com** oraz **sekretariat@giganciprogramowania.edu.pl** (proszę dodać obu odbiorców wysyłając e-maila).
 Treści zadań znajdują się w odpowiadających lekcjom folderach! Jeżeli dane zadanie macie już zaliczone w arkuszu w folderze Wyniki, nie musicie go wysyłać!

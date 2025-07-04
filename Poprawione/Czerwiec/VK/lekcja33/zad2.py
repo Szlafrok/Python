@@ -8,7 +8,7 @@ def find_max(arr):
 
 def selection_sort(arr):
     n = len(arr)
-    low = 0
+    low = 3
     high = n - 1
 
     while low < high:
@@ -24,3 +24,4 @@ print(selection_sort(arr))
 
 # (4/4), bezbłędnie zrobione, ale zauważyłem tu pewną ciekawą rzecz w linijce 16 w związku z Twoim rozwiązaniem - 
 # chciałbym ją z Tobą krótko omówić przy okazji następnych zajęć, dobrze? :)
+# (+1 pkt)
