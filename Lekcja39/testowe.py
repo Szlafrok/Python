@@ -9,5 +9,17 @@ def print_array(arr):
     print(f"Typ obiektu: {type(arr)}")
     print(f"Rozmiar tablicy: {arr.shape}")
 
-
 print_array(arr)
+
+def shapeshifter(arr):
+    print(arr.reshape(9,1))
+    print(arr.reshape(1,9))
+    print(arr.reshape(3,3))
+    print(arr.reshape(1,-1))
+    print(arr.reshape(-1,3))
+    print("----------------")
+    newarr = np.array_split(arr, 3)
+    for a in newarr:
+        print(a)
+
+shapeshifter(arr)
