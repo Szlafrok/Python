@@ -1,6 +1,7 @@
-# Powtórka – Python, NumPy i podstawy programowania
+# Powtórka – Python, NumPy i podstawy obsługi tablic
 
 ## Interpretacja, a kompilacja
+Python jest językiem interpretowanym, a jego struktura i elastyczność, choć bardzo ułatwiają działanie w nim, znacznie ograniczają szybkość programów napisanych w tym języku. NumPy jest głównie napisane w języku C, języku kompilowanym i bardziej ograniczonym pod kątem pracy na nim, a przez to o wiele wydajniejszym.
 
 | Cecha                      | Interpretacja                   | Kompilacja                         |
 |---------------------------|----------------------------------|------------------------------------|
@@ -23,7 +24,7 @@
 
 ## Czym jest tablica NumPy?
 
-- To **jednorodny zbiór danych** (wszystkie elementy tego samego typu)
+- To **jednorodna struktura danych** (wszystkie elementy tego samego typu)
 - Może być 1D, 2D, 3D, ... (jedno, dwu, trójwymiarowa)
 - Zwykle szybsza niż lista, dzięki swoim ograniczeniom nie musi sprawdzać wielu warunków, które musi sprawdzać lista (np. typ danych, długość listy).
 
@@ -94,7 +95,7 @@ Zwraca losowe liczby całkowite z zakresu `[0, limit)`, czyli cały ten przedzia
 - `size`: ile wartości wylosować - wówczas zwróci nam tablicę złożoną z takich liczb.
 
 ```python
-np.random.randint(10, size=5) # -> [3 1 0 4 5 6 8 9 7 1]
+np.random.randint(10, size=5) # -> [3 7 1 9 4]
 ```
 
 ---
