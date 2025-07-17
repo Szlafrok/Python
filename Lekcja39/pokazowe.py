@@ -79,3 +79,18 @@ def shuffle_array(arr):
     print(f"Po tasowaniu: {arr}")
 
 shuffle_array(arr)
+
+
+
+arr = np.array([1, 2, 3, 4, 5, 6])
+print("-----------------")
+print(f"Tablica: {arr}")
+
+print(np.sum(arr))
+print(np.min(arr))
+print(np.max(arr))
+
+# Średnia tablicy [1 2 3 4 5 6] wynosi 3.5
+# np.mean(arr)
+
+print(f"Średnia tablicy {arr} wynosi {np.mean(arr)}")
