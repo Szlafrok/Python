@@ -16,7 +16,7 @@ to czysty niebieski, a (255, 255, 255) to biały.
 wszędzie tam, gdzie kolory są wyświetlane za pomocą światła.
 ○ W programowaniu i grafice komputerowej.
 
----
+
 ## Model HSV
 
 ### ● Struktura:
@@ -33,7 +33,7 @@ intensywności (nasycenie) i jasności.
 ○ Używany często w programach do edycji obrazów i grafiki,
 ○ Aplikacje graficzne
 
----
+
 ## Model CMYK
 
 ### ● Struktura:
@@ -51,7 +51,7 @@ czerni.
 ○ Używany w projektowaniu wszelkich materiałów przeznaczonych do druku, takich jak plakaty,
 ulotki czy książki.
 
----
+
 ## Model RGBA
 
 ### ● Struktura:
@@ -70,7 +70,7 @@ nakładaniu kolorów lub tworzeniu efektów wizualnych.
 ○ Używany do rysowania półprzezroczystych elementów w interfejsach użytkownika, cieniach,
 nałożeniach kolorów i warstwach.
 
----
+
 ## Model HEX
 
 ### ● Struktura:
@@ -90,4 +90,3 @@ do użycia w kodzie.
 ○ Umożliwia precyzyjne definiowanie kolorów za pomocą jednego ciągu znaków, co jest idealne
 do stylizowania elementów w CSS.
 
----
