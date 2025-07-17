@@ -15,6 +15,7 @@ to czysty niebieski, a (255, 255, 255) to biały.
 ○ Najczęściej używany w wyświetlaczach, monitorach, telewizorach, aparatach cyfrowych i
 wszędzie tam, gdzie kolory są wyświetlane za pomocą światła.
 ○ W programowaniu i grafice komputerowej.
+
 ---
 ## Model HSV
 
@@ -31,6 +32,7 @@ intensywności (nasycenie) i jasności.
 ### ● Zastosowanie:
 ○ Używany często w programach do edycji obrazów i grafiki,
 ○ Aplikacje graficzne
+
 ---
 ## Model CMYK
 
@@ -48,6 +50,7 @@ czerni.
 ○ Standardowy model w drukarstwie i publikacji materiałów.
 ○ Używany w projektowaniu wszelkich materiałów przeznaczonych do druku, takich jak plakaty,
 ulotki czy książki.
+
 ---
 ## Model RGBA
 
@@ -66,6 +69,7 @@ nakładaniu kolorów lub tworzeniu efektów wizualnych.
 ○ W grafice komputerowej, tworzeniu aplikacji webowych i mobilnych.
 ○ Używany do rysowania półprzezroczystych elementów w interfejsach użytkownika, cieniach,
 nałożeniach kolorów i warstwach.
+
 ---
 ## Model HEX
 
@@ -85,4 +89,5 @@ internetowych.
 do użycia w kodzie.
 ○ Umożliwia precyzyjne definiowanie kolorów za pomocą jednego ciągu znaków, co jest idealne
 do stylizowania elementów w CSS.
+
 ---
