@@ -49,4 +49,6 @@ print(result)
 # Proszę napisać wywołanie funkcji, które znajdzie wszystkie liczby nieparzyste w ciągu,
 # gdzie sa one podzielone spacjami.
 
-ciag = "5 12 442 321 45 20 21 37"
+ciag = "5 12 442 321 45 20 21 37" # \d*[13579]
+
+print(re.findall(r"\b\d*[13579]\b", ciag))
