@@ -13,9 +13,9 @@ result = re.match(r"""
 # print(f"Grupa: {result.group()}")
 
 
-tekst = "01234-PaaaaaaaaaaP[]-85421"#"Jestem Gerald Piotruś von Minecraft 123 Gerald"
+tekst = "01234-Paaaaa.aaaaP[]-85421"#"Jestem Gerald Piotruś von Minecraft 123 Gerald"
 
-result = re.search(r"P[a-z]{10}P\[\]", tekst) # 01234-sfhudfhdufdhfdfu-85421
+result = re.search(r"P[a-z.]{10}P\[\]", tekst) # 01234-sfhudfhdufdhfdfu-85421
 
 print(result)
 print(f"Początek: {result.start()}")
@@ -29,3 +29,24 @@ print(f"Grupa: {result.group()}")
 """
 [podkreślenia, cyfry, litery, kropki] @ [litery, kropki]
 """
+email = "goku.drip_12@yahoo.com"
+
+result = re.search(r"^[0-9a-z_.]+@[a-z.]+$", email)
+print(result.group())
+
+
+
+tekst = "Siema mały Polonezie!"                 
+result = re.findall(r"[A-Za-z\w]{3}", tekst, re.ASCII)
+print(result)
+
+
+result = re.sub(r"[A-Za-z]{3}", "DRYDRY" , tekst)
+print(result)
+
+# Potrzebne symbole: \b \d * []
+
+# Proszę napisać wywołanie funkcji, które znajdzie wszystkie liczby nieparzyste w ciągu,
+# gdzie sa one podzielone spacjami.
+
+ciag = "5 12 442 321 45 20 21 37"
