@@ -16,7 +16,7 @@
 |----------------|-------------------------------------------------------------|---------------------|
 | `re.search()`  | Szuka **pierwszego dopasowania** gdziekolwiek w ciągu       | `Match` lub `None`                        |
 | `re.match()`   | Sprawdza, czy **początek** ciągu pasuje do wzorca           | `Match` lub `None`                        |
-| `re.findall()` | Zwraca **wszystkie dopasowania** jako listę                 | Lista stringów
+| `re.findall()` | Zwraca **wszystkie dopasowania** jako listę                 | Lista stringów lub krotek
 | `re.sub()`     | Zamienia dopasowane fragmenty na nowy tekst                 | `str` – tekst po zamianie                |
 
 ---
@@ -45,7 +45,7 @@
 |----------|----------------------------------------------|----------------------------------------------|
 | `.`      | Dowolny znak (oprócz nowej linii)            | `a.b` → `"acb"`, `"a_b"`, ale nie `"ab"`     |
 | `\d`     | Cyfra (0–9)                                  | `\d{3}` → `"123"`                             |
-| `\w`     | Znak alfanumeryczny lub `_`                  | `\w+` → `"abc_123"`                           |
+| `\w`     | Znak alfanumeryczny lub `_` (bez polskich znaków)      | `\w+` → `"abc_123"`                           |
 | `\s`     | Biały znak (spacja, tab, enter)              | `\s+` → `" "` lub `\t`                        |
 | `\b`     | Granica słowa                                | `\bcat\b` → `"cat"` ale nie `"category"`      |
 | `^`      | Początek ciągu                               | `^Start` → dopasuje `"Start here"`           |
