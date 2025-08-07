@@ -50,3 +50,37 @@ print(f"Pogoda: {weather}")
 print(f"Temperatura: {temperature} st. C")
 print(f"Ciśnienie: {preesure} hPa")
 print(f"Wilgotność: {humidity}%")
+
+def get_country_data(country_code):
+    url = f"https://restcountries.com/v3.1/alpha/{country_code.upper()}"
+    response = requests.get(url)
+    # pprint(response.json())
+    full_name = response.json()[0]['name']['common']
+    currency = list(response.json()[0]['currencies'].keys())[0]
+    return full_name, currency
+
+country_name_orig, country_currency_orig = get_country_data(country_2)
+country_name_dest, country_currency_dest = get_country_data(country_2)
+
+print(f"Państwo: {country_name_dest}")
+print(f"Waluta: {country_currency_dest}")
+
+def get_currency_ratio(origin_curr, dest_curr):
+    if origin_curr != "PLN":
+        url = f"https://api.nbp.pl/api/exchangerates/rates/B/{origin_curr}/"
+        response = requests.get(url)
+        origin_rate = response.json()['rates'][0]['mid']
+    else:
+        origin_rate = 1
+
+    if dest_curr != "PLN":
+        url = f"https://api.nbp.pl/api/exchangerates/rates/B/{dest_curr}/"
+        response = requests.get(url)
+        dest_rate = response.json()['rates'][0]['mid']
+    else:
+        dest_rate = 1
+
+    return origin_rate / dest_rate
+
+ratio = get_currency_ratio(country_currency_orig, country_currency_dest)
+print(f"Kurs wymiany waluty: {ratio}")
