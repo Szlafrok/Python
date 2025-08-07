@@ -38,9 +38,9 @@ def get_weather_info(lat, lon, API_KEY):
     print(response.status_code)
     pprint(response.json())
     response_json = response.json()
-    # pogoda
-    # temperatura odczuwalna
-    # ciśnienie
-    # wilgotność
+    weather = response_json['weather'][0]['description']   # pogoda
+    temperature = response_json['main']['feels_like']     # temperatura odczuwalna
+    pressure = # ciśnienie
+    humidity = # wilgotność
 
 get_weather_info(lat_2, lon_2, API_KEY)
