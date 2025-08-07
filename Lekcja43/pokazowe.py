@@ -91,8 +91,8 @@ comm = ""
 
 while True:
     print("Jaką akcję chcesz wykonać?")
-    print("    1. Podaj/zamień miejsce startowe")
-    print("    2. Podaj/zamień miejsce docelowe")
+    print(f"    1. Podaj/zamień miejsce startowe / Aktualnie: {origin_loc if origin_loc else "Brak"}")
+    print(f"    2. Podaj/zamień miejsce docelowe / Aktualnie: {destin_loc if destin_loc else "Brak"}")
     print("    3. Sprawdź lokalizację miejsca startowego")
     print("    4. Sprawdź lokalizację miejsca docelowego")
     print("    5. Sprawdź pogodę miejsca startowego")
@@ -104,9 +104,11 @@ while True:
     chosen_option = int(input())
 
     if chosen_option == 1:
-        pass
+        origin_loc = input("Podaj miasto startowe: ")
+
     elif chosen_option == 2:
-        pass
+        destin_loc = input("Podaj miasto docelowe: ")
+
     elif chosen_option == 3:
         pass
     elif chosen_option == 4:
