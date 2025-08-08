@@ -12,14 +12,14 @@ def bajtek_szuka_pieseli(PIESELE: list) -> list:
 tak, aby zwracała listę poprawnych numerów PIESEL.
 > Przykład
 ```diff
-+12345-678901a
--12345-67890a        # za mało cyfr w drugim członie
-+00000-000000z
--1234-567890a        # za mało cyfr w pierwszym członie
-+54321-123456m
-+11111-222222k
--123456-789012a      # za dużo cyfr
--ABCDE-123456z       # litery zamiast cyfr
++   12345-678901a
+-   12345-67890a        # za mało cyfr w drugim członie
++   00000-000000z
+-   1234-567890a        # za mało cyfr w pierwszym członie
++   54321-123456m
++   11111-222222k
+-   123456-789012a      # za dużo cyfr
+-   ABCDE-123456z       # litery zamiast cyfr
 ```
 
 (+1.5 pkt) Numery PIESEL obywateli z Wólki Rivskiej spełniają następujący warunek: sumy cyfr pierwszego i drugiego członu liczbowego PIESELu (rozdzielone pauzą) są sobie równe. Król Bajtek chce utworzyć dla tych osób opcję korzystania z ulg podatkowych, ponieważ robią najlepszą kremówkę w królestwie.

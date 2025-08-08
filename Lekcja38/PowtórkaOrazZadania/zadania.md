@@ -7,4 +7,6 @@ Spokojnie, nie trzeba się uczyć na pamięć poleceń, ale przy czytaniu kodu w
 [Link do quizu powtórkowego](https://wayground.com/join?gc=42159004)
 (można poprawić swój wynik z lekcji lub rozwiązać quiz od nowa, jeśli tego nie zrobiliście!)
 
+**Proszę oznaczyć mnie na Discordzie (kanał kursu #python), jeśli link jest nieaktualny!**
+
 Powodzenia!

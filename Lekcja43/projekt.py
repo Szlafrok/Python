@@ -1,42 +1,19 @@
 import requests
 from pprint import pprint
 
-API_KEY = "cd5b3262f4a1a6071dcf78eba8229b22"
+API_KEY = "cd5b3262f4a1a6071dcf78eba8229b22" # Skorzystajcie tu ze swojego klucza!
 
-def check_coordinates(city, API_KEY):
+def check_coordinates(city: str, API_KEY: str) -> tuple:
     response = requests.get(f"http://api.openweathermap.org/geo/1.0/direct?q={city}&appid={API_KEY}")
-    # print(response.status_code)
-    # pprint(response.json())
-    lat = response.json()[0]["lat"]
-    lon = response.json()[0]["lon"]
-    name = response.json()[0]["name"]
-    country = response.json()[0]["country"]
-    la_ver = response.json()[0]["local_names"]
+    lat = response.json()[0]["lat"] # szerokość geograficzna
+    lon = response.json()[0]["lon"] # długość geograficzna
+    name = response.json()[0]["name"] # nazwa miasta
+    country = response.json()[0]["country"] # państwo
 
     return lat, lon, name, country
 
-# a, b, c, d = (..., ..., ..., ...)
-
-"""
-Proszę napisać skrypt, który na podstawie powyższej funkcji wczyta od użytkownika MIASTO DOCELOWE
-oraz MIASTO, Z KTÓREGO ZACZYNA DROGĘ i zapisze do zmiennych dla obu miast: wysokość i szerokość geograficzną
-(latitude, longitude), nazwę i państwo.
-"""
-
-# city_1 = input("Proszę podać miasto startowe: ")
-# city_2 = input("Proszę podać miasto docelowe: ")
-# lat_1, lon_1, name_1, country_1 = check_coordinates(city_1, API_KEY)
-# lat_2, lon_2, name_2, country_2 = check_coordinates(city_2, API_KEY)
-
-# print(lat_1, lon_1, name_1, country_1)
-# print(lat_2, lon_2, name_2, country_2)
-
-#print(check_coordinates("Rzeszów", API_KEY))
-
-def get_weather_info(lat, lon, API_KEY):
+def get_weather_info(lat: float, lon: float, API_KEY: str) -> tuple:
     response = requests.get(f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_KEY}&lang=PL&units=metric")
-    # print(response.status_code)
-    # pprint(response.json())
     response_json = response.json()
     weather = response_json['weather'][0]['description']   # pogoda
     temperature = response_json['main']['feels_like']     # temperatura odczuwalna
@@ -44,28 +21,14 @@ def get_weather_info(lat, lon, API_KEY):
     humidity = response_json['main']['humidity'] # wilgotność
     return weather, temperature, pressure, humidity
 
-# weather, temperature, preesure, humidity = get_weather_info(lat_2, lon_2, API_KEY)
-
-# print(f"Pogoda: {weather}")
-# print(f"Temperatura: {temperature} st. C")
-# print(f"Ciśnienie: {preesure} hPa")
-# print(f"Wilgotność: {humidity}%")
-
-def get_country_data(country_code):
+def get_country_data(country_code: str) -> tuple:
     url = f"https://restcountries.com/v3.1/alpha/{country_code.upper()}"
     response = requests.get(url)
-    # pprint(response.json())
     full_name = response.json()[0]['name']['common']
     currency = list(response.json()[0]['currencies'].keys())[0]
     return full_name, currency
 
-# country_name_orig, country_currency_orig = get_country_data(country_1)
-# country_name_dest, country_currency_dest = get_country_data(country_2)
-
-# print(f"Państwo: {country_name_dest}")
-# print(f"Waluta: {country_currency_dest}")
-
-def get_currency_ratio(origin_curr, dest_curr):
+def get_currency_ratio(origin_curr: str, dest_curr: str) -> float:
     if origin_curr != "PLN":
         url = f"https://api.nbp.pl/api/exchangerates/rates/B/{origin_curr}/"
         response = requests.get(url)
@@ -79,15 +42,11 @@ def get_currency_ratio(origin_curr, dest_curr):
         dest_rate = response.json()['rates'][0]['mid']
     else:
         dest_rate = 1
-    # print(origin_rate, dest_rate)
     return origin_rate / dest_rate
 
-# ratio = get_currency_ratio(country_currency_orig, country_currency_dest)
-# print(f"Kurs wymiany waluty: {ratio}")
-
-origin_loc = None
-destin_loc = None
-comm = ""
+origin_loc = None # Miasto startowe
+destin_loc = None # Miasto końcowe
+comm = "" # Komunikat podawany po wykonaniu polecenia. Domyślnie pusty.
 
 while True:
     print("Jaką akcję chcesz wykonać?")
@@ -100,7 +59,7 @@ while True:
     print("    7. Poznaj kursy wymiany walut")
     print("    8. Koniec")
     print(comm)
-    comm = ""
+    comm = "" # czyszczenie komunikatu
     chosen_option = int(input())
 
     if chosen_option == 1:
@@ -111,13 +70,18 @@ while True:
 
     elif chosen_option == 3:
         pass
+
     elif chosen_option == 4:
         pass
+
     elif chosen_option == 5:
         pass
+
     elif chosen_option == 6:
         pass
+
     elif chosen_option == 7:
         pass
+    
     elif chosen_option == 8:
         quit()
