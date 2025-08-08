@@ -1,6 +1,6 @@
 ## Lista zadań - Wakacje
 ```
-Łącznie: 16 pkt + 8 dodatkowych pkt
+Łącznie: 44 pkt + 17 dodatkowych pkt
 ```
 W tym miejscu znajdziesz listę zadań, które wysyłamy do **7 września 2025 roku**! Proszę, żeby rozwiązania zbiorowo wysłali do Wasi rodzice na e-maile: **kamiennygigant@gmail.com** oraz **sekretariat@giganciprogramowania.edu.pl** (proszę dodać obu odbiorców wysyłając e-maila).
 W e-mailu piszemy od kogo są zadania. Gorąca prośba o nazwanie plików tak, żeby dało się rozeznać które zadanie jest które!
