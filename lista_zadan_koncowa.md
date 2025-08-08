@@ -51,7 +51,7 @@ I TO BY BYŁO TYLE 🎉🎉🎉
 ### Maksymalny wynik: 180.00 pkt
 
 | Odznaki | Wynik         | Procent punktów |
-| ------- | :-----      : | --------------- |
+| ------- | :-----:       | --------------- |
 | 10      |  144.0 pkt    | 80%             |
 | 9       |  126.0 pkt    | 70%             |
 | 8       |  108.0 pkt    | 60%             |
