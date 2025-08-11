@@ -40,7 +40,7 @@ Treści zadań znajdują się w odpowiadających lekcjom folderach! Jeżeli dane
 *Brak zadań domowych!*
 
 ### Lekcja 47: 
-1. Ostatni taniec (6 pkt) (+4 dod) - *To nie jest duże i złożone zadanie - bardziej zbiór drobnych *😉
+1. Ostatni taniec (6 pkt) (+4 dod) - *To nie jest duże i złożone zadanie - bardziej zbiór drobnych* 😉
 
 ---
 I TO BY BYŁO TYLE 🎉🎉🎉
