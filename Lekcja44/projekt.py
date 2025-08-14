@@ -27,10 +27,21 @@ def scrap_pokemon_list():
     
     # [wyrażenie for element in obiekt if warunek] [x**2 for x in range(10)]
 
+info_list = []
 pokemon_list = scrap_pokemon_list()
 for pokemon in pokemon_list:
     try:
         pokemon_info = get_pokemon_info(pokemon[1][3:])
+        info_list.append((pokemon[0], pokemon[1], pokemon_info))
         print(pokemon)
     except Exception as e:
         print(pokemon[1], e)
+
+pdf = FPDF()
+
+pdf.add_font("DejaVu", "", "Lekcja44/DejaVuSansCondensed.ttf")
+
+for pokemon in info_list:
+    pdf.add_page(format="A5")
+    pdf.set_font("DejaVu", size = 16)
+    pdf.text(x = 5, y = 10, text=f"#{pokemon[1]} {pokemon[0]}")
