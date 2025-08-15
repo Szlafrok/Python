@@ -31,7 +31,7 @@ def scrap_pokemon_list():
         pokemon = (columns[2].text[:-1], f"No.{columns[0].text[:-1]}")
         pokemons_list.append(pokemon)
         #print(pokemon)
-    pokemons_without_mega = [pokemon for pokemon in pokemons_list if ("Mega" not in pokemon[0] and "Gigantamax" not in pokemon[0])]
+    pokemons_without_mega = [pokemon for pokemon in pokemons_list if ("Mega" not in pokemon[0] and "Gigantamax" not in pokemon[0])] # wycinamy Pokemony, których nazwa zawiera "Mega" lub "Gigantamax"
     for pokemon in pokemons_without_mega:
         pass #print(pokemon)
     return pokemons_without_mega
