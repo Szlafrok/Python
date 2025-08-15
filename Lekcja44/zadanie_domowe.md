@@ -41,3 +41,5 @@ Proszę odpowiednio zmodyfikować powyższy kod tak, aby dało się z niego spra
 ---
 ## Konto na GitHub (5 pkt)
 Proszę założyć konto na GitHub i przesłać nazwę użytkownika na czacie  podczas zajęć trenerowi prowadzącemu lub mnie drogą mailową. Proszę to zrobić PRZED KOŃCEM KURSU, ponieważ później będę zamykał repozytorium na GitHubie i pozostawiał dostęp tylko dla Was!
+
+*Nazwy użytkownika przesłali: Wiktor, Bazi, Alan, Patryk* ✅

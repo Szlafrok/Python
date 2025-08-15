@@ -68,7 +68,7 @@ while True:
     elif chosen_option == 2:
         destin_loc = input("Podaj miasto docelowe: ")
 
-    elif chosen_option == 3:
+    elif chosen_option == 3: # Sprawdź zadanie domowe!
         pass
 
     elif chosen_option == 4:
