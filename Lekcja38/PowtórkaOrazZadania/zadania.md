@@ -4,7 +4,7 @@ Proszę wygenerować za pomocą sztucznej inteligencji 5 fotografii oraz opisów
 ### 38-2) Księga Powtórzonego PDF-a (0-4p)
 Proszę powtórzyć wiadomości na temat środowisk wirtualnych i biblioteki fpdf2 na podstawie materiałów powtórzeniowych w Panelu Ucznia oraz podanej tu ściągawki do metod obiektów modułu fpdf2. Następnie proszę rozwiązać Quizizza pod podanym linkiem: [będziemy rozgrywali go 10.07, ale potem wstawię Wam tu link do niego ;)]
 Spokojnie, nie trzeba się uczyć na pamięć poleceń, ale przy czytaniu kodu warto mieć ogólne pojęcie, co który robi ;D
-[Link do quizu powtórkowego](https://wayground.com/join?gc=12621500) *Link aktywny do 24.08 14:00*
+[Link do quizu powtórkowego](https://wayground.com/join?gc=44244348) *Link aktywny do 31.08 23:59*
 (można poprawić swój wynik z lekcji lub rozwiązać quiz od nowa, jeśli tego nie zrobiliście!)
 
 **Proszę oznaczyć mnie na Discordzie (kanał kursu #python), jeśli link jest nieaktualny!**
