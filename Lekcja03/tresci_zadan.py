@@ -2,7 +2,7 @@
 
 # (a) Proszę pobrać od użytkownika imię, nazwisko, rok urodzenia i wypisać do terminalu
 # informację o jego imieniu, nazwisku i wieku. Należy wykorzystać w tym celu
-# fstringa. Do zbierania liczb od użytkownika używamy funkcji input()
+# fstringa. Do zbierania danych od użytkownika używamy funkcji input()
 
 # Przykład: Dla danych:
 
